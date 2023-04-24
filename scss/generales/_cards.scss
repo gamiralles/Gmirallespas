@@ -1,0 +1,49 @@
+.servicios {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  .seguros-a {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    .card {
+      border-radius: 10px;
+      min-height: 200px;
+      font-weight: bold;
+      padding: 20px;
+      position: relative;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .card:hover {
+      filter: blur(5px);
+    }
+  }
+
+  .seguros-b {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    .card {
+      border-radius: 10px;
+      min-height: 200px;
+      font-weight: bold;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .card:hover {
+      filter: blur(5px);
+    }
+  }
+}

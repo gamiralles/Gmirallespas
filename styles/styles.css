@@ -1,0 +1,147 @@
+header {
+  margin: 10px 100px 0px 100px;
+}
+
+footer {
+  color: rgb(0, 0, 0);
+}
+
+#logo {
+  width: 300px;
+}
+
+#encabezado {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: rgb(0, 87, 184);
+}
+
+#encabezado-secundario {
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+#formularios {
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  text-align: justify;
+  margin-left: 100px;
+}
+#formularios #fechas {
+  display: flex;
+}
+
+#textos {
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+}
+
+#title {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(0, 87, 184);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  text-justify: center;
+}
+
+#home {
+  background-image: url(../img/Fondoim.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#automotor {
+  background-image: url(../img/backauto.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#moto {
+  background-image: url(../img/backmoto.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hogar {
+  background-image: url(../img/backhogar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#flotas {
+  background-image: url(../img/backflotas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#caucion {
+  background-image: url(../img/backcaucion.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#agricola {
+  background-image: url(../img/backagricola.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.servicios {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.servicios .seguros-a {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.servicios .seguros-a .card {
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.servicios .seguros-a .card:hover {
+  filter: blur(5px);
+}
+.servicios .seguros-b {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.servicios .seguros-b .card {
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+.servicios .seguros-b .card:hover {
+  filter: blur(5px);
+}
+
+/*# sourceMappingURL=styles.css.map */

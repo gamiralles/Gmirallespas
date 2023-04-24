@@ -1,0 +1,62 @@
+header {
+  margin: 10px 100px 0px 100px;
+}
+
+footer {
+  color: $color-base;
+}
+
+#logo {
+  width: 300px;
+}
+
+#encabezado {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: $color-primary;
+}
+
+#encabezado-secundario {
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  font-weight: 500;
+  color: $color-base;
+}
+
+#formularios {
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  text-align: justify;
+  margin-left: 100px;
+
+  #fechas {
+    display: flex;
+  }
+}
+
+#textos {
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  color: $color-base;
+  text-align: justify;
+}
+
+#title {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  font-style: normal;
+  color: $color-primary;
+  text-shadow: 1px 1px 1px $color-base;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  text-justify: center;
+  
+  
+}
