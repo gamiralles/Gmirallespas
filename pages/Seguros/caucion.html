@@ -51,8 +51,48 @@
             </div>
         </div>
     </header>
+
     <body>
-        <button id="boton">Click</button>
+        <main class="conteiner-fluid">
+            <div class="row mt-5">
+                <div class="d-flex justify-content-start col-12 col-xl-6">
+                    <div id="formularios">
+                        <div id="encabezado">
+                            <h1>Cotizador de Caucion de Alquileres</h1>
+                        </div>
+                        <br>
+                        <form action="submit">
+                            <div>
+                                <label for="nombre">Nombre y Apellido:</label><br>
+                                <input name="nombre" type="text" id="nombre">
+                                <br>
+                                <br>
+                                <label for="telefono">Telefono:</label><br>
+                                <input type="number" name="telefono" id="telefono">
+                                <br>
+                                <br>
+                                <label for="email">Email:</label><br>
+                                <input type="text" name="email" id="email">
+                                <br>
+                                <br>
+                                <label for="sueldo">Ingrese su sueldo mensual:</label><br>
+                                <input type="number" name="sueldo" id="sueldo">
+                                <br>
+                                <br>
+                                <label for="sueldo">Ingrese el alquiler mensual:</label><br>
+                                <input type="number" name="alquiler" id="alquiler">
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <input class="btn btn-primary" type="reset" value="Borrar">
+                                <input class="btn btn-primary" type="button" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 
     <footer class="container-fluid d-flex justify-content-end">
@@ -67,7 +107,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-        <script src="../../main.js"></script>
+        <!-- js main -->
+    <script src="../../JavaScript/caucion.js"></script>
 </body>
 
 

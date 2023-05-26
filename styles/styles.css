@@ -58,13 +58,13 @@ footer {
 }
 
 #home {
-  background-image: url(../img/Fondoim.png);
+  background-image: url(../../img/Fondoim.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #automotor {
-  background-image: url(../img/backauto.png);
+  background-image: url(../../img/backauto.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

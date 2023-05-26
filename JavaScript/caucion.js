@@ -82,7 +82,7 @@ function inicio() {
     alert(`Bienvenido/a al cotizador de caución.`);
     numCliente();
     if (arrayClientes.some((cliente) => cliente.dni === numeroCliente)) {
-      alert(`Usted ya es Cliente.`);
+      alert(`Bienvenido`);
       cotizador();
       console.log(arrayClientes);
     } else {
