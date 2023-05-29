@@ -1,13 +1,11 @@
-let numeroCliente;
-let sueldo;
-let alquiler;
 let valorSeguro;
+let coti;
 
 class datosClientes {
-  constructor(nombre, edad, dni, telefono, email) {
+  constructor(nombre, dni, fecha, telefono, email) {
     this.nombre = nombre;
-    this.edad = edad;
     this.dni = dni;
+    this.fechaNac = fecha;
     this.telefono = telefono;
     this.email = email;
   }
@@ -15,55 +13,46 @@ class datosClientes {
 
 const gastonMiralles = new datosClientes(
   "Gaston Miralles",
-  "29",
   "38089331",
+  "09/03/1994",
   "1154879865",
   "gmiralles@gseguros.com.ar"
 );
 
 const javierGonzalez = new datosClientes(
   "Javier Gonzalez",
-  "31",
   "38089332",
+  "16/09/1993",
   "1154879866",
   "jgonzalez@gseguros.com.ar"
 );
 
-const martinFernandez = new datosClientes(
-  "Martin Fernandez",
-  "25",
+const martinMoscoloni = new datosClientes(
+  "Martin Moscoloni",
   "38089333",
+  "06/09/1993",
   "1154879864",
   "mfernandez@gseguros.com.ar"
 );
 
-const arrayClientes = [];
+const clientes = [];
 
-arrayClientes.push(gastonMiralles);
-arrayClientes.push(javierGonzalez);
-arrayClientes.push(martinFernandez);
+clientes.push(gastonMiralles);
+clientes.push(javierGonzalez);
+clientes.push(martinMoscoloni);
 
-function numCliente() {
-  numeroCliente = prompt(`Ingrese su dni:`);
-  return numeroCliente;
-}
+const valorCotizacion = [];
 
-function nuevoCliente() {
-  let nombre = prompt("Ingrese su Nombre y Apellido:");
-  let edad = parseInt(prompt("Ingrese su edad:"));
-  let dni = numeroCliente;
-  let telefono = parseInt(prompt("Ingrese su Telefono:"));
-  let email = prompt("Ingrese su Email:");
-  let cliente = new datosClientes(nombre, edad, dni, telefono, email);
-  arrayClientes.push(cliente);
-  console.log(arrayClientes);
-}
+function inicio() {
+  let nombre = document.getElementById("nombre").value;
+  let dni = document.getElementById("dni").value;
+  let fecha = document.getElementById("fechaNac").value;
+  let telefono = document.getElementById("telefono").value;
+  let email = document.getElementById("email").value;
+  let cliente = new datosClientes(nombre, dni, fecha, telefono, email);
 
-function cotizador() {
-  sueldo = parseInt(prompt("Por favor ingrese su remuneracion mensual."));
-  alquiler = parseInt(
-    prompt("Por favor ingrese el valor del alquiler mensual.")
-  );
+  let sueldo = document.getElementById("sueldo").value;
+  let alquiler = document.getElementById("alquiler").value;
 
   if (sueldo >= 200000) {
     valorSeguro = alquiler / 2;
@@ -73,29 +62,72 @@ function cotizador() {
     valorSeguro = alquiler / 1.6;
   }
 
-  alert(`El valor del seguro es de $ ${valorSeguro} mensuales.`);
+  valorCotizacion.unshift(valorSeguro);
+  clientes.push(cliente);
+  localStorage.setItem("clientes", JSON.stringify(clientes));
+  localStorage.setItem("valorCotizaciones", JSON.stringify(valorCotizacion));
+
+  let cotizacion = localStorage.getItem("valorCotizaciones");
+  let valor = JSON.parse(cotizacion);
+  coti = valor[0].toFixed(0);
+  console.log(coti);
 }
 
-function inicio() {
-  let respuesta;
-  do {
-    alert(`Bienvenido/a al cotizador de caución.`);
-    numCliente();
-    if (arrayClientes.some((cliente) => cliente.dni === numeroCliente)) {
-      alert(`Bienvenido`);
-      cotizador();
-      console.log(arrayClientes);
-    } else {
-      alert(`Por favor ingrese sus datos.`);
-      nuevoCliente();
-      alert(`Bienvenido a Gaston Miralles productor asesor de Seguros.`);      
-      cotizador();
-      console.log(arrayClientes);
-    }
-    respuesta = prompt(
-      "¿Desea realizar otra cotización? si/no:"
-    );
-  } while (respuesta.toLowerCase() === "si");
+function cotizaciones() {
+  let opciones = document.getElementById("cotizaciones");
+  let opc = document.createElement("div");
+  opc.innerHTML = `  
+  <div class="cotizaciones">
+  <h1>Cotizacion</h1>
+  <br>
+  <p>Valor de $ ${coti}</p>
+  <br> 
+  <h4>en 3 cuotas de</h4>
+  <h4>$ ${(coti / 3).toFixed(0)}</h4>
+  <br>
+  <br>
+  <input class="btn btn-primary" value="Contratar">
+  </div>
+  
+  <div class="cotizaciones">
+  <h1>Cotizacion</h1>
+  <br>
+  <p>Valor $ ${coti}</p>
+  <br> 
+  <h4>en 6 cuotas de </h4>
+  <h4>$ ${(coti / 6).toFixed(0)}</h4>
+  <br>
+  <br>
+  <input class="btn btn-primary" value="Contratar">
+  </div>
+
+  <div class="cotizaciones">
+  <h1>Cotizacion</h1>
+  <br>
+  <p>Valor de $ ${coti}</p>
+  <br> 
+  <h4>en 12 cuotas de </h4>
+  <h4>$ ${(coti / 12).toFixed(0)}</h4>
+  <br>
+  <br>
+  <input class="btn btn-primary" value="Contratar">
+  </div>
+  `;
+  opciones.append(opc);
 }
 
-inicio()
+let formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  inicio();
+  cotizaciones();
+  formulario.reset();
+});
+
+borrar.addEventListener("click", () => {
+  location.reload();
+});
+
+
