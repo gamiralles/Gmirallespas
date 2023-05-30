@@ -101,7 +101,7 @@ function cotizaciones() {
   <p>Total anual $ ${coti}</p>
   <br> 
   <h4>en 6 cuotas de $ ${(coti / 6).toFixed(0)}</h4>
-  <h6>mas 10% de recargo</h6>
+  <h6>mas 5% de recargo</h6>
   <br>
   <br>
   <input class="btn btn-primary" value="Contratar">
