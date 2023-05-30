@@ -70,13 +70,13 @@ function inicio() {
   let cotizacion = localStorage.getItem("valorCotizaciones");
   let valor = JSON.parse(cotizacion);
   coti = valor[0].toFixed(0);
+  console.log(cliente);
   console.log(coti);
 }
 
 function cotizaciones() {
   let opciones = document.getElementById("cotizaciones");
-  let opc = document.createElement("div");
-  opc.innerHTML = `  
+  opciones.innerHTML = `  
   <div class="cotizaciones">
   <h1>Cotizacion</h1>
   <br>
@@ -107,13 +107,12 @@ function cotizaciones() {
   <p>Valor de $ ${coti}</p>
   <br> 
   <h4>en 12 cuotas de </h4>
-  <h4>$ ${(coti / 12).toFixed(0)}</h4>
+  <h4>$ ${(coti / 12 + 10).toFixed(0)}</h4>
   <br>
   <br>
   <input class="btn btn-primary" value="Contratar">
   </div>
   `;
-  opciones.append(opc);
 }
 
 let formulario = document.getElementById("formulario");
@@ -129,5 +128,3 @@ formulario.addEventListener("submit", (e) => {
 borrar.addEventListener("click", () => {
   location.reload();
 });
-
-
