@@ -147,13 +147,37 @@ footer {
 .cotizaciones {
   display: inline-block;
   padding: 30px;
-  border: 2px solid grey;
+  border: 1px solid grey;
   border-radius: 7px;
   margin-top: 100px;
   margin-bottom: 50px;
   margin-right: 50px;
   text-align: center;
-  background-color: #FAF3F2;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px black;
+}
+.cotizaciones .titulo {
+  font-family: "Roboto";
+  color: rgb(0, 87, 184);
+}
+.cotizaciones p {
+  font-family: "Nunito";
+  font-size: large;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.cotizaciones h4 {
+  font-family: "Nunito";
+  font-size: large;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+}
+.cotizaciones h6 {
+  font-family: "Nunito";
+  font-size: small;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -49,16 +49,41 @@
 }
 
 .cotizaciones {
-    display: inline-block;
-    
-    padding: 30px;
-    border: 2px solid grey;
-    border-radius: 7px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    
-    text-align: center;
+  display: inline-block;
 
-    background-color: #FAF3F2;
+  padding: 30px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px black;
+
+  .titulo {
+    font-family: "Roboto";
+    color: $color-primary;
   }
+  p {
+    font-family: "Nunito";
+    font-size: large;
+    font-weight: 500;
+    color: $color-base;
+  }
+  h4 {
+    font-family: "Nunito";
+    font-size: large;
+    font-weight: 900;
+    color: $color-base;
+  }
+  h6 {
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: 300;
+    color: $color-base;
+  }
+}

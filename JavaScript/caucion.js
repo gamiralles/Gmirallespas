@@ -1,6 +1,8 @@
 let valorSeguro;
 let coti;
 
+//* Base de datos de clientes y cotizaciones
+
 class datosClientes {
   constructor(nombre, dni, fecha, telefono, email) {
     this.nombre = nombre;
@@ -43,6 +45,8 @@ clientes.push(martinMoscoloni);
 
 const valorCotizacion = [];
 
+//* Funcion para cotizar, segun datos del cliente
+
 function inicio() {
   let nombre = document.getElementById("nombre").value;
   let dni = document.getElementById("dni").value;
@@ -74,46 +78,50 @@ function inicio() {
   console.log(coti);
 }
 
+//* Funcion para mostrar las cotizaciones en pantalla
+
 function cotizaciones() {
   let opciones = document.getElementById("cotizaciones");
   opciones.innerHTML = `  
   <div class="cotizaciones">
-  <h1>Cotizacion</h1>
+  <h1 class="titulo">Cotización</h1>
   <br>
-  <p>Valor de $ ${coti}</p>
+  <p>Total anual de $ ${coti}</p>
   <br> 
-  <h4>en 3 cuotas de</h4>
-  <h4>$ ${(coti / 3).toFixed(0)}</h4>
+  <h4>en 3 cuotas de $ ${(coti / 3).toFixed(0)}</h4>
   <br>
-  <br>
-  <input class="btn btn-primary" value="Contratar">
-  </div>
-  
-  <div class="cotizaciones">
-  <h1>Cotizacion</h1>
-  <br>
-  <p>Valor $ ${coti}</p>
-  <br> 
-  <h4>en 6 cuotas de </h4>
-  <h4>$ ${(coti / 6).toFixed(0)}</h4>
   <br>
   <br>
   <input class="btn btn-primary" value="Contratar">
   </div>
 
   <div class="cotizaciones">
-  <h1>Cotizacion</h1>
+  <h1 class="titulo">Cotización</h1>
   <br>
-  <p>Valor de $ ${coti}</p>
+  <p>Total anual $ ${coti}</p>
   <br> 
-  <h4>en 12 cuotas de </h4>
-  <h4>$ ${(coti / 12 + 10).toFixed(0)}</h4>
+  <h4>en 6 cuotas de $ ${(coti / 6).toFixed(0)}</h4>
+  <h6>mas 10% de recargo</h6>
+  <br>
+  <br>
+  <input class="btn btn-primary" value="Contratar">
+  </div>
+
+  <div class="cotizaciones">
+  <h1 class="titulo">Cotización</h1>
+  <br>
+  <p>Total anual de $ ${coti}</p>
+  <br> 
+  <h4>en 12 cuotas de $ ${(coti / 12).toFixed(0)}</h4>
+  <h6>mas 10% de recargo</h6>
   <br>
   <br>
   <input class="btn btn-primary" value="Contratar">
   </div>
   `;
 }
+
+//* Evento asignado al boton cotizar
 
 let formulario = document.getElementById("formulario");
 
