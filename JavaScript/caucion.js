@@ -121,7 +121,7 @@ function cotizaciones() {
   `;
 }
 
-//* Evento asignado al boton cotizar
+//* Evento asignado al formulario
 
 let formulario = document.getElementById("formulario");
 
