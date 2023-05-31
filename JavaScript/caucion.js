@@ -84,7 +84,7 @@ function cotizaciones() {
   let opciones = document.getElementById("cotizaciones");
   opciones.innerHTML = `  
   <div class="cotizaciones">
-  <h1 class="titulo">Cotización</h1>
+  <h1>Cotización</h1>
   <br>
   <p>Total anual de $ ${coti}</p>
   <br> 
@@ -96,7 +96,7 @@ function cotizaciones() {
   </div>
 
   <div class="cotizaciones">
-  <h1 class="titulo">Cotización</h1>
+  <h1>Cotización</h1>
   <br>
   <p>Total anual $ ${coti}</p>
   <br> 
@@ -108,7 +108,7 @@ function cotizaciones() {
   </div>
 
   <div class="cotizaciones">
-  <h1 class="titulo">Cotización</h1>
+  <h1>Cotización</h1>
   <br>
   <p>Total anual de $ ${coti}</p>
   <br> 

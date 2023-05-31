@@ -157,7 +157,7 @@ footer {
   backdrop-filter: blur(10px);
   box-shadow: 1px 1px black;
 }
-.cotizaciones .titulo {
+.cotizaciones h1 {
   font-family: "Roboto";
   color: rgb(0, 87, 184);
 }
