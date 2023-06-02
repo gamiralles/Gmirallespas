@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="SEGUROS, SINIESTROS, PRODUCTOR, ASESORAMIENTO, FLOTAS">
-    <title>Seguro de Flotas</title>
-    <link rel="shortcut icon" href="../../img/ico.ico">
-    <!-- Style -->
-    <link rel="stylesheet" href="../../styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refacturaciones</title>
+    <link rel="shortcut icon" href="../img/ico.ico">
+    <link rel="stylesheet" href="../styles/styles.css">
     <!-- fuente Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +21,10 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
-<body id="flotas">
+<body id="home">
     <header class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../../index.html"><img src="../../img/Logo1.png" id="logo" class="img-fluid"
+            <a class="navbar-brand" href="../index.html"><img src="../img/Logo1.png" id="logo" class="img-fluid"
                     alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,24 +34,57 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../acercademi.html">Acerca de Mi</a>
+                        <a class="nav-link" href="../pages/acercademi.html">Acerca de Mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../seguros.html">Seguros</a>
+                        <a class="nav-link" href="../pages/seguros.html">Seguros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../siniestros.html">Siniestros</a>
+                        <a class="nav-link" href="../pages/siniestros.html">Siniestros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../refacturaciones.html">Refacturaciones</a>
+                        <a class="nav-link" href="../pages/refacturaciones.html">Refacturaciones</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
+    <main class="conteiner-fluid">
+        <div class="row mt-5">
+            <div class="d-flex justify-content-start col-12 col-xl-4">
+                <div id="formularios">
+                    <div id="encabezado">
+                        <h1>Calculador</h1>
+                    </div>
+                    <br>
+                    <form action="submit" id="formulario">
+                        <div>
+                            <input type="text" name="san" id="san" placeholder="SA actualizada">
+                            <br>
+                            <br>
+                            <input type="text" name="sav" id="sav" placeholder="SA anterior">
+                            <br>
+                            <br>
+                            <input type="text" name="cuota" id="cuota" placeholder="Cuota">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <input class="btn btn-primary" type="reset" value="Borrar" id="borrar">
+                            <input class="btn btn-primary" type="submit" value="Calcular" id="calcular">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="conteiner d-flex justify-content-center col-12 col-xl-8">
+                <div id="refas">
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="container-fluid d-flex justify-content-end">
         <div class="row">
@@ -63,11 +94,13 @@
             </div>
         </div>
     </footer>
+
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- js script -->
+    <script src="../JavaScript/refacturaciones.js"></script>
 </body>
-
 
 </html>

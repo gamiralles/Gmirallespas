@@ -92,7 +92,7 @@ function cotizaciones() {
   <br>
   <br>
   <br>
-  <input class="btn btn-primary" value="Contratar">
+  <input class="btn btn-primary" value="contratar" id="contratar">
   </div>
 
   <div class="cotizaciones">
@@ -104,7 +104,7 @@ function cotizaciones() {
   <h6>mas 5% de recargo</h6>
   <br>
   <br>
-  <input class="btn btn-primary" value="Contratar">
+  <input class="btn btn-primary" value="contratar" id="contratar2">
   </div>
 
   <div class="cotizaciones">
@@ -116,9 +116,43 @@ function cotizaciones() {
   <h6>mas 10% de recargo</h6>
   <br>
   <br>
-  <input class="btn btn-primary" value="Contratar">
+  <input class="btn btn-primary" value="contratar" id="contratar3">
   </div>
   `;
+
+/*   let btn = document.getElementById("contratar");
+  let btn2 = document.getElementById("contratar2");
+  let btn3 = document.getElementById("contratar3");
+
+  btn.addEventListener("click", () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Gracias por Elegirnos",
+      showConfirmButton: false,
+      timer: 2000,
+    });
+  });
+
+  btn2.addEventListener("click", () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Gracias por Elegirnos",
+      showConfirmButton: false,
+      timer: 2000,
+    });
+  });
+
+  btn3.addEventListener("click", () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Gracias por Elegirnos",
+      showConfirmButton: false,
+      timer: 2000,
+    });
+  }); */
 }
 
 //* Evento asignado al formulario
