@@ -57,7 +57,20 @@ footer {
   text-justify: center;
 }
 
-.servicios {
+.pageSeguros {
+  padding: 20px;
+  font-family: sans-serif;
+  background: #f2f2f2;
+}
+.pageSeguros img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+.pageSeguros h1 {
+  margin-bottom: 0.5em;
+}
+
+.containerSeguros {
   width: 80%;
   max-width: 1200px;
   margin: auto;
@@ -66,42 +79,58 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.servicios .seguros-a {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 20px;
-}
-.servicios .seguros-a .card {
-  border-radius: 10px;
-  min-height: 200px;
-  font-weight: bold;
-  padding: 20px;
+
+.seguros-listing {
   position: relative;
-  background-size: cover;
-  background-position: center center;
-}
-.servicios .seguros-a .card:hover {
-  filter: blur(5px);
-}
-.servicios .seguros-b {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 20px;
-}
-.servicios .seguros-b .card {
-  border-radius: 10px;
-  min-height: 200px;
-  font-weight: bold;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-}
-.servicios .seguros-b .card:hover {
-  filter: blur(5px);
 }
 
+.seguros-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.seguros-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.seguros-title {
+  font-family: "Roboto";
+  font-size: x-large;
+  font-weight: 500;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(0, 156, 189, 0.3);
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seguros-listing:hover .seguros-title {
+  opacity: 1;
+}
+
+.seguros-listing:hover .seguros-image img {
+  filter: blur(2px);
+}
+
+@media (hover: none) {
+  .seguros-title {
+    opacity: 1;
+  }
+  .seguros-image img {
+    filter: blur(2px);
+  }
+}
 .cotizaciones {
   display: inline-block;
   padding: 30px;
