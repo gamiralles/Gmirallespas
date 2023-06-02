@@ -16,7 +16,7 @@ function refacturaciones() {
   let refa = document.getElementById("refas");
   let opc = document.createElement("div");
   opc.innerHTML = `  
-          <div>
+          <div class="refas">
           <p>Buen dia, refactura la poliza del seguro te envio los nuevos valores.</p>
           <p>Suma Asegurada $ ${san}</h5>
           <p>Cuota $ ${cuota}</p>

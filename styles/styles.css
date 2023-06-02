@@ -57,48 +57,6 @@ footer {
   text-justify: center;
 }
 
-#home {
-  background-image: url(../../img/Fondoim.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#automotor {
-  background-image: url(../../img/backauto.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#moto {
-  background-image: url(../img/backmoto.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#hogar {
-  background-image: url(../img/backhogar.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#flotas {
-  background-image: url(../img/backflotas.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#caucion {
-  background-image: url(../img/backcaucion.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#agricola {
-  background-image: url(../img/backagricola.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .servicios {
   width: 80%;
   max-width: 1200px;
@@ -178,6 +136,17 @@ footer {
   font-size: small;
   font-weight: 300;
   color: rgb(0, 0, 0);
+}
+
+.refas {
+  padding: 30px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  text-align: start;
+  box-shadow: 1px 1px black;
 }
 
 /*# sourceMappingURL=styles.css.map */
