@@ -38,6 +38,7 @@ formulario.addEventListener("submit", (e) => {
 
   porcentaje();
   refacturaciones();
+  formulario.reset()
 });
 
 borrar.addEventListener("click", () => {

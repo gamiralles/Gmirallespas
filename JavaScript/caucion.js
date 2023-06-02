@@ -120,7 +120,7 @@ function cotizaciones() {
   </div>
   `;
 
-/*   let btn = document.getElementById("contratar");
+  let btn = document.getElementById("contratar");
   let btn2 = document.getElementById("contratar2");
   let btn3 = document.getElementById("contratar3");
 
@@ -152,7 +152,7 @@ function cotizaciones() {
       showConfirmButton: false,
       timer: 2000,
     });
-  }); */
+  });
 }
 
 //* Evento asignado al formulario
