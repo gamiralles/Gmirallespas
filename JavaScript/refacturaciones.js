@@ -1,10 +1,14 @@
-let savieja = document.getElementById("san").value;
-let sanueva = document.getElementById("sav").value;
+let cuota;
 let aumento;
-let cuota = document.getElementById("cuota").value;
+let san;
+let sav;
 
-function porcentaje(sanueva, savieja) {
-  aumento = ((sanueva - savieja) / savieja) * 100;
+function porcentaje() {
+  san = document.getElementById("san").value;
+  sav = document.getElementById("sav").value;
+  cuota = document.getElementById("cuota").value;
+
+  aumento = ((san - sav) / sav) * 100;
   return aumento
 }
 
@@ -14,7 +18,7 @@ function refacturaciones() {
   opc.innerHTML = `  
           <div>
           <p>Buen dia, refactura la poliza del seguro te envio los nuevos valores.</p>
-          <p>Suma Asegurada $ ${savieja}</h5>
+          <p>Suma Asegurada $ ${san}</h5>
           <p>Cuota $ ${cuota}</p>
   
           <p>El incremento de la suma asegurada es del ${aumento.toFixed(
@@ -22,7 +26,8 @@ function refacturaciones() {
           )}% con respecto al trimestre pasado</p>
   
           <p>Si esta ok, refacturamos saludos.</p>
-          </div>`;
+          </div>
+          <br>`;
   refa.append(opc);
 }
 
@@ -33,5 +38,8 @@ formulario.addEventListener("submit", (e) => {
 
   porcentaje();
   refacturaciones();
-  
+});
+
+borrar.addEventListener("click", () => {
+  location.reload();
 });
