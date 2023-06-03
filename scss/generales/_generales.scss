@@ -58,3 +58,16 @@ footer {
   text-align: center;
   text-justify: center;
 }
+
+.index {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  
+
+  .imagesIndex {
+    border: auto;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    width: 100%;
+  }
+}

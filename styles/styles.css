@@ -57,6 +57,17 @@ footer {
   text-justify: center;
 }
 
+.index {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.index .imagesIndex {
+  border: auto;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  width: 100%;
+}
+
 .pageSeguros {
   padding: 20px;
   font-family: sans-serif;
@@ -82,6 +93,7 @@ footer {
 
 .seguros-listing {
   position: relative;
+  box-shadow: 17px 3px 30px -9px rgb(0, 0, 0);
 }
 
 .seguros-image {
