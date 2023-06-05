@@ -74,7 +74,7 @@ footer {
   background: #f2f2f2;
 }
 .pageSeguros img {
-  width: 100%; /* need to overwrite inline dimensions */
+  width: 100%;
   height: auto;
 }
 .pageSeguros h1 {
@@ -148,9 +148,9 @@ footer {
   padding: 30px;
   border: 1px solid grey;
   border-radius: 7px;
-  margin-top: 100px;
+  margin-top: 15px;
   margin-bottom: 50px;
-  margin-right: 50px;
+  margin-right: 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
