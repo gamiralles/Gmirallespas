@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Caución",
+    "tipo": "Ejecucion de contrato",
+    "valor": "$14.399"
+  },
+  {
+    "titulo": "Caución",
+    "tipo": "de Alquiler",
+    "valor": "$11.400"
+  },
+  {
+    "titulo": "Caución",
+    "tipo": "Adunera",
+    "valor": "$25.789"
+  },
+  {
+    "titulo": "Caución",
+    "tipo": "de Alquiler",
+    "valor": "$5.678"
+  },
+  {
+    "titulo": "Caución",
+    "tipo": "Alquiler",
+    "valor": "$10.399"
+  },
+  {
+    "titulo": "Caución",
+    "tipo": "Mantenimiento de oferta",
+    "valor": "$76.540"
+  }
+]

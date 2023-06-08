@@ -155,6 +155,29 @@ function cotizaciones() {
   });
 }
 
+const ctz = async () => {
+  try {
+    const response = await fetch("../../cotiFrecuentes.json");
+    const data = await response.json();
+
+    data.forEach((cotis) => {
+      let frecuentes = document.getElementById("frecuentes");
+      let cots = document.createElement("div");
+      cots.innerHTML = `
+      <div class="cotizaciones">
+      <h5>${cotis.titulo}</h5>
+      <h6>${cotis.tipo}</h6>
+      <p>${cotis.valor}</p>
+      <a href="../contacto.html">mas info</a>
+      </div>
+      `;
+      frecuentes.append(cots);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 //* Evento asignado al formulario
 
 let formulario = document.getElementById("formulario");
@@ -170,3 +193,5 @@ formulario.addEventListener("submit", (e) => {
 borrar.addEventListener("click", () => {
   location.reload();
 });
+
+ctz();
