@@ -1,7 +1,7 @@
 .pageSeguros {
   padding: 20px;
   font-family: sans-serif;
-  background: #f2f2f2;
+  background: white;
   img {
     width: 100%;
     height: auto;
@@ -24,7 +24,7 @@
 
 .seguros-listing {
   position: relative;
-  box-shadow: 17px 3px 30px -9px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 20px black;
 }
 
 .seguros-image {
@@ -43,7 +43,7 @@
 .seguros-title {
   font-family: "Roboto";
   font-size: x-large;
-  font-weight:500 ;
+  font-weight: 500;
   text-decoration: none;
   z-index: 1;
   position: absolute;
@@ -137,4 +137,44 @@
   text-align: start;
 
   box-shadow: 1px 1px black;
+}
+
+.inicioSesion {
+  display: inline-block;
+
+  padding: 30px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px black;
+
+  h1 {
+    font-family: "Roboto";
+    color: $color-primary;
+  }
+  p {
+    font-family: "Nunito";
+    font-size: large;
+    font-weight: 500;
+    color: $color-base;
+  }
+  h4 {
+    font-family: "Nunito";
+    font-size: large;
+    font-weight: 900;
+    color: $color-base;
+  }
+  h6 {
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: 300;
+    color: $color-base;
+  }
 }

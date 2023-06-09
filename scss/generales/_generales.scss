@@ -6,37 +6,37 @@ footer {
   color: $color-base;
 }
 
-#logo {
+.logo {
   width: 300px;
 }
 
-#encabezado {
+.encabezado {
   font-family: "Roboto", sans-serif;
   font-size: large;
   font-weight: 600;
   color: $color-primary;
 }
 
-#encabezado-secundario {
+.encabezado-secundario {
   font-family: "Nunito", sans-serif;
   font-size: medium;
   font-weight: 500;
   color: $color-base;
 }
 
-#formularios {
+.formularios {
   font-family: "Nunito", sans-serif;
   font-size: medium;
   font-weight: 300;
   text-align: justify;
   margin-left: 100px;
 
-  #fechas {
+  .fechas {
     display: flex;
   }
 }
 
-#textos {
+.textos {
   font-family: "Nunito", sans-serif;
   font-size: medium;
   font-weight: 300;
@@ -44,7 +44,7 @@ footer {
   text-align: justify;
 }
 
-#title {
+.title {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   font-weight: 900;
@@ -61,7 +61,7 @@ footer {
 
 .index {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
 
   .imagesIndex {
     border: auto;

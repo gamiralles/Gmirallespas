@@ -28,7 +28,7 @@
 <body>
     <header class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../img/Logo1.png" id="logo" class="img-fluid"
+            <a class="navbar-brand" href="../index.html"><img src="../img/Logo1.png" class="logo img-fluid"
                     alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,17 +50,25 @@
                         <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/refacturaciones.html">Refacturaciones</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="../pages/Clientes.html">Clientes</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-<main id="main">
-    
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="d-flex mt-5 justify-content-center">
+                <div class="inicioSesion">
+                    <h1>Iniciar Sesión</h1><br><br>
+                    <input type="text" name="dni" placeholder="Dni"><br><br>
+                    <input type="password" name="pass" id="pass" placeholder="Contraseña"><br><br><br>  
+                    <input type="button" class="btn btn-primary" name="inicio" id="inicio" value="Ingresar">
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
     <!-- js main -->
