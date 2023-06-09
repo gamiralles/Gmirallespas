@@ -8,7 +8,7 @@
     <meta name="description"
         content="Gaston Miralles pas ofrece un amplio asesoramiento en materia de seguros, brindando cotizador y denuncia de siniestros en linea.">
     <meta name="keywords" content="SEGUROS, SINIESTROS, AUTOMOTOR, PRODUCTOR, ASESORAMIENTO, MOTOS, CAUCION">
-    <title>CLientes</title>
+    <title>Clientes</title>
     <link rel="shortcut icon" href="../img/ico.ico">
     <!-- Style -->
     <link rel="stylesheet" href="../styles/styles.css">
@@ -62,9 +62,15 @@
             <div class="d-flex mt-5 justify-content-center">
                 <div class="inicioSesion">
                     <h1>Iniciar Sesión</h1><br><br>
-                    <input type="text" name="dni" placeholder="Dni"><br><br>
-                    <input type="password" name="pass" id="pass" placeholder="Contraseña"><br><br><br>  
-                    <input type="button" class="btn btn-primary" name="inicio" id="inicio" value="Ingresar">
+                    <form action="login" method="post">
+                        <label for="usuario">
+                            <input type="text" id="usuario" placeholder="Usuario">
+                        </label><br><br>
+                        <label for="password">
+                            <input type="text" id="contraseña" placeholder="Contraseña" autocomplete="current-password">
+                        </label><br><br><br>
+                        <button class="btn btn-secondary" id="ingresar">iniciar sesion</button>
+                    </form>
                 </div>
             </div>
         </div>

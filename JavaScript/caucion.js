@@ -76,6 +76,7 @@ function inicio() {
   coti = valor[0].toFixed(0);
   console.log(cliente);
   console.log(coti);
+  console.log(nombre);
 }
 
 //* Funcion para mostrar las cotizaciones en pantalla
