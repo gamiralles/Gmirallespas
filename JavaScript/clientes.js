@@ -3,16 +3,32 @@ function login() {
   let contraseña = document.getElementById("contraseña").value;
 
   fetch("../clientes.json")
-    .then((response) => response.json)
+    .then((response) => response.json())
     .then((data) => {
-      usuario = data.find((user) => user.usuario === username);
-      console.log(usuario);
+      const user = data.find((user) => user.username === usuario && user.password === contraseña);
+      if (user) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Bienvenido a gambito seguros',
+          text: '',
+          footer: '<a href=""></a>'
+        })
+        console.log("sesion iniciada correctamente");
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops... Contraseña Incorrecta',
+          text: '',
+          footer: '<a href="">olvide mi contraseña</a>'
+        })
+        console.log("Usuario o contraseña incorrectos");
+      }
     })
     .catch((error) => {
       console.log(error);
     });
 }
 
-ingresar.addEventListener("click", () => {
-  login();
-});
+const ingresar = document.getElementById("ingresar");
+ingresar.addEventListener("click", login);
+
