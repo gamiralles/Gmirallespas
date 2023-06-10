@@ -1,7 +1,17 @@
 [
- {
+  {
     "nombre": "Gaston Miralles",
-    "username": "38089339",
-    "password": "1234" 
+    "username": "38089331",
+    "password": "1234"
+  },
+  {
+    "nombre": "Javier Gonzalez",
+    "username": "38089332",
+    "password": "1234"
+  },
+  {
+   "nombre": "Martin Moscoloni",
+   "username": "38089333",
+   "password": "1234"
  }
 ]

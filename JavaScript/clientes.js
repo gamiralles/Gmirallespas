@@ -9,7 +9,7 @@ function login() {
       if (user) {
         Swal.fire({
           icon: 'success',
-          title: 'Bienvenido a gambito seguros',
+          title: 'Bienvenido',
           text: '',
           footer: '<a href=""></a>'
         })
@@ -17,7 +17,7 @@ function login() {
       } else {
         Swal.fire({
           icon: 'error',
-          title: 'Oops... Contraseña Incorrecta',
+          title: 'Oops... Algo salio mal',
           text: '',
           footer: '<a href="">olvide mi contraseña</a>'
         })
