@@ -29,8 +29,8 @@
             <a class="navbar-brand" href="../../index.html"><img src="../../img/Logo1.png" class="logo img-fluid"
                     alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" <span
+                class="navbar-toggler-icon"></span>
             </button>-
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -58,48 +58,39 @@
         <main class="conteiner-fluid">
             <div class="row mt-5">
                 <div class="d-flex justify-content-center col-12 col-xl-12">
-                    <div class="encabezado">
+                    <div class="encabezado justify-content-center">
                         <h1>Cotizador de Caucion</h1>
                     </div>
                     <br>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="d-flex justify-content-start col-12 col-xl-4">
+                <div class="d-flex justify-content-center col-12 col-xl-12">
                     <div class="formularios">
                         <form action="submit" id="formulario">
-                            <div>
-                                <input name="nombre" type="text" id="nombre" placeholder="Nombre y Apellido">
-                                <br>
-                                <br>
-                                <input type="text" name="dni" id="dni" placeholder="DNI">
-                                <br>
-                                <br>
-                                <label for="fecha">Fecha de Nacimiento</label><br>
-                                <input type="text" name="fechaNac" id="fechaNac" placeholder="DD/MM/AAAA">
-                                <br>
-                                <br>
-                                <input type="number" name="telefono" id="telefono" placeholder="Telefono">
-                                <br>
-                                <br>
-                                <input type="text" name="email" id="email" placeholder="Email">
-                                <br>
-                                <br>
-                                <input type="number" name="sueldo" id="sueldo" placeholder="Ingrese su Sueldo">
-                                <br>
-                                <br>
-                                <input type="number" name="alquiler" id="alquiler" placeholder="Ingrese el Alquiler">
-                                <br>
-                                <br>
-                                <div>
+                            <div class="row mt-5">
+                                <div class="d-flex justify-content-center">
+                                    <input name="nombre" type="text" id="nombre" placeholder="Nombre y Apellido"> &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <input type="text" name="dni" id="dni" placeholder="DNI">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    <input type="text" name="fechaNac" id="fechaNac" placeholder="DD/MM/AAAA">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    <input type="number" name="telefono" id="telefono" placeholder="Telefono">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    <input type="text" name="email" id="email" placeholder="Email"> &nbsp; &nbsp; &nbsp; &nbsp;
                                 </div>
-                                <input class="btn btn-primary" type="reset" value="Borrar" id="borrar">
-                                <input class="btn btn-primary" type="submit" value="Cotizar" id="cotizar">
+                                <div class="mt-5 d-flex justify-content-center">
+                                    <input type="number" name="sueldo" id="sueldo" placeholder="Ingrese su Sueldo">  &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <input type="number" name="alquiler" id="alquiler" placeholder="Ingrese el Alquiler"> &nbsp; &nbsp; &nbsp; &nbsp;
+                                </div>
+                                <div class="mt-5 d-flex justify-content-center">
+                                    <input class="btn btn-primary" type="reset" value="Borrar" id="borrar"> &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <input class="btn btn-primary" type="submit" value="Cotizar" id="cotizar"> &nbsp; &nbsp; &nbsp; &nbsp;
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="d-flex justify-content-start col-12 col-xl-8">
+            </div>
+            <div class="row mt-5">
+                <div class="d-flex justify-content-center col-12 col-xl-12">
                     <div id="cotizaciones">
                     </div>
                 </div>
