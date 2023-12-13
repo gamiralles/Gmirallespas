@@ -3,6 +3,7 @@ let aumento;
 let san;
 let sav;
 
+
 function porcentaje() {
   san = document.getElementById("san").value;
   sav = document.getElementById("sav").value;
@@ -15,9 +16,10 @@ function porcentaje() {
 function refacturaciones() {
   let refa = document.getElementById("refas");
   let opc = document.createElement("div");
+  let nom = document.getElementById("name").value;
   opc.innerHTML = `  
           <div class="refas">
-          <p>Buen dia, refactura la poliza del seguro te envio los nuevos valores.</p>
+          <p>Buen dia ${nom}, refactura la poliza del seguro te envio los nuevos valores.</p>
           <p>Suma Asegurada $ ${san}</h5>
           <p>Cuota $ ${cuota}</p>
   
